@@ -301,7 +301,7 @@ sum(w_jobs_2$Gap_Time < 0, na.rm = TRUE)
 
 ### Distance
 
-We computed the total distance traveled by each crew to complete their jobs, and removeed any rows where the total distance traveled is in the top 0.5 percentile. The distance is calculated as the distance between the current latitude/longitude and the previous latitude/longitude. If it's the first row for a crew or if the distance between jobs is smaller than 0, the distance is calculated as the distance between the headquarters and the current latitude/longitude.
+We computed the total distance traveled by each crew to complete their jobs, and removed any rows where the total distance traveled is in the top 0.5 percentile. The distance is calculated as the distance between the current latitude/longitude and the previous latitude/longitude. If it's the first row for a crew or if the distance between jobs is smaller than 0, the distance is calculated as the distance between the headquarters and the current latitude/longitude.
 
 ```{r}
 w_jobs_2$GI_lat = as.numeric('45.3301306')
