@@ -81,11 +81,11 @@ We categorized 'Service Type' to "Small Load", "Medium Load", "Large Load", "XLa
 
 ```{r}
 w_jobs <- subset(w_jobs, !(Total == 0))
-w_jobs$Type <- ifelse(w_jobs$Total >= 1 & w_jobs$Total <= 275, "Small Load",
-                     ifelse(w_jobs$Total > 275 & w_jobs$Total <= 375, "Medium Load",
-                            ifelse(w_jobs$Total > 375 & w_jobs$Total <= 525, "Large Load",
-                                   ifelse(w_jobs$Total > 525 & w_jobs$Total <= 775, "XLarge Load",
-                                          ifelse(w_jobs$Total > 775, "XLarge +", "Other")))))
+w_jobs$Type <- ifelse(w_jobs$Total >= 1 & w_jobs$Total <= 100, "Small Load",
+                     ifelse(w_jobs$Total > 100 & w_jobs$Total <= 250, "Medium Load",
+                            ifelse(w_jobs$Total > 250 & w_jobs$Total <= 400, "Large Load",
+                                   ifelse(w_jobs$Total > 400 & w_jobs$Total <= 600, "XLarge Load",
+                                          ifelse(w_jobs$Total > 600, "XLarge +", "Other")))))
 w_jobs$Type <- as.factor(w_jobs$Type)
 ```
 
