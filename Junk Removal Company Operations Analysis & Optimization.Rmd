@@ -1,9 +1,3 @@
----
-title: "Group 02-03_Final R Script"
-output: html_document
-date: "2023-04-29"
----
-
 # Data Cleaning
 ## Load Data
 Load packages:
